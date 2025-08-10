@@ -17,7 +17,8 @@ This repository contains two principal folders, **VQE_Approach** and **MPO**, wh
 ### **1) VQE_Approach folder — Variational Quantum Method**  
  This folder contains all materials associated with the quantum Variational Quantum Eigensolver (VQE) strategy for solving the one-dimensional viscous Burgers' equation. The approach formulates a variational objective consistent with the discretized PDE, chooses a parametrized circuit (ansatz), and uses a classical optimizer to update the circuit parameters over successive time steps. The contents of the folder document the theoretical setup, provide a classical reference for benchmarking, and present visualizations of the VQE solution and its agreement with the baseline. 
  
-Within the VQE_Approach folder we have two subfolders: **Simulator_Results** and **Hardware_Results**
+Within the VQE_Approach folder we have two subfolders: **Simulator_Results** and **Hardware_Results**.
+
 The **Simulator_Results** those files: 
 
 **Mathematical_Approach_of_Burger_s_Equation**  
