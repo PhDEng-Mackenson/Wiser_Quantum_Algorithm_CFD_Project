@@ -15,8 +15,10 @@ Wiser Program Enrollment ID: gst-rYawgBfBcuTJ2qD
 This repository contains two principal folders, **VQE_Approach** and **MPO**, which implement two different methodologies for solving the one-dimensional viscous Burgers' equation. The **MPO** folder presents a tensor-network, split-operator solution supported by a classical finite-difference baseline and a set of visualizations. The **VQE_Approach** folder presents a quantum-variational strategy in which a parametrized circuit is optimized to reproduce the Burgers' dynamics and is then compared against the classical reference.  
 
 ### **1) VQE_Approach folder — Variational Quantum Method**  
-This folder contains all materials associated with the quantum Variational Quantum Eigensolver (VQE) strategy for solving the one-dimensional viscous Burgers' equation. The approach formulates a variational objective consistent with the discretized PDE, chooses a parametrized circuit (ansatz), and uses a classical optimizer to update the circuit parameters over successive time steps. The contents of the folder document the theoretical setup, provide a classical reference for benchmarking, and present visualizations of the VQE solution and its agreement with the baseline. 
-
+ This folder contains all materials associated with the quantum Variational Quantum Eigensolver (VQE) strategy for solving the one-dimensional viscous Burgers' equation. The approach formulates a variational objective consistent with the discretized PDE, chooses a parametrized circuit (ansatz), and uses a classical optimizer to update the circuit parameters over successive time steps. The contents of the folder document the theoretical setup, provide a classical reference for benchmarking, and present visualizations of the VQE solution and its agreement with the baseline. 
+ 
+Within the VQE_Approach folder we have two subfolders: **Simulator_Results** and **Hardware_Results**
+The **Simulator_Results** those files: 
 
 **Mathematical_Approach_of_Burger_s_Equation**  
 This document presents a resume of our solution, the theoretical framework used in the VQE method. It outlines the governing equation, the initial and boundary conditions, and the mapping from the PDE to a variational cost functional. It also explains the assumptions made for the ansatz and the role of viscosity in the dynamics that the variational model must capture.  
@@ -36,8 +38,9 @@ This figure shows a three-dimensional surface of u(x,t), highlighting steep grad
 **burgers_comparison.png**  
 This figure summarizes the agreement between the VQE solution and the classical CFD baseline. It typically overlays profiles at the same time instants or presents an error curve, allowing you to evaluate fidelity, stability, and any systematic discrepancies attributable to the variational ansatz or optimization settings.  
 
+The folder **Hardware_Results** contains the same files as the folder **Simulator_Results**
 
-Due to limited access to quantum hardware resources, we run our algorithm experimentally to demonstrate its resilience to noise. We hope to continue this work in the future and aim to perform this crucial validation step using actual quantum hardware.  
+Due to limited access to quantum hardware resources, we run our algorithm with limited parameters and circuit depth. We hope to continue this work in the future and aim to perform this crucial validation step using actual quantum hardware with noise mitigation error and with a more complex algorithm.  
 
 ---
 
