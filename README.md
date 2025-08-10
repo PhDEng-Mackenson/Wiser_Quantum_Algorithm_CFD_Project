@@ -65,7 +65,7 @@ This figure directly compares the CFD reference with the MPO solution—typicall
 This presentation deck outlines the methodology and comparative results from applying our VQE and MPO-based solutions to the Burgers equation.  
 
 **README.md**  
-This file provides concise instructions for working with the VQE and MPO materials in this folder. It describes how to set up the environment, how to run the relevant notebooks (including the CFD reference), and how to interpret the saved figures when assessing the VQE solution.  
+This file provides concise instructions for working with the VQE and MPO materials in this folder. It describes how to set up the environment, how to run the relevant notebooks ,and how to interpret the saved figures when assessing the VQE solution.  
 
 ---
 
