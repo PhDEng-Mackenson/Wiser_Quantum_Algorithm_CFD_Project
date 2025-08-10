@@ -19,7 +19,7 @@ This repository contains two principal folders, **VQE_Approach** and **MPO**, wh
  
 Within the VQE_Approach folder we have two subfolders: **Simulator_Results** and **Hardware_Results**.
 
-The **Simulator_Results** those files: 
+The **Simulator_Results** folder contains those files: 
 
 **Mathematical_Approach_of_Burger_s_Equation**  
 This document presents a resume of our solution, the theoretical framework used in the VQE method. It outlines the governing equation, the initial and boundary conditions, and the mapping from the PDE to a variational cost functional. It also explains the assumptions made for the ansatz and the role of viscosity in the dynamics that the variational model must capture.  
