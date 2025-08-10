@@ -17,6 +17,7 @@ This repository contains two principal folders, **VQE_Approach** and **MPO**, wh
 ### **1) VQE_Approach folder — Variational Quantum Method**  
 This folder contains all materials associated with the quantum Variational Quantum Eigensolver (VQE) strategy for solving the one-dimensional viscous Burgers' equation. The approach formulates a variational objective consistent with the discretized PDE, chooses a parametrized circuit (ansatz), and uses a classical optimizer to update the circuit parameters over successive time steps. The contents of the folder document the theoretical setup, provide a classical reference for benchmarking, and present visualizations of the VQE solution and its agreement with the baseline. 
 
+
 **Mathematical_Approach_of_Burger_s_Equation**  
 This document presents a resume of our solution, the theoretical framework used in the VQE method. It outlines the governing equation, the initial and boundary conditions, and the mapping from the PDE to a variational cost functional. It also explains the assumptions made for the ansatz and the role of viscosity in the dynamics that the variational model must capture.  
 
@@ -34,6 +35,9 @@ This figure shows a three-dimensional surface of u(x,t), highlighting steep grad
 
 **burgers_comparison.png**  
 This figure summarizes the agreement between the VQE solution and the classical CFD baseline. It typically overlays profiles at the same time instants or presents an error curve, allowing you to evaluate fidelity, stability, and any systematic discrepancies attributable to the variational ansatz or optimization settings.  
+
+
+Due to limited access to quantum hardware resources, we run our algorithm experimentally to demonstrate its resilience to noise. We hope to continue this work in the future and aim to perform this crucial validation step using actual quantum hardware.  
 
 ---
 
@@ -68,8 +72,6 @@ This presentation deck outlines the methodology and comparative results from app
 This file provides concise instructions for working with the VQE and MPO materials in this folder. It describes how to set up the environment, how to run the relevant notebooks ,and how to interpret the saved figures when assessing the VQE solution.  
 
 ---
-
-Due to limited access to quantum hardware resources, we were unable to run our algorithm experimentally to demonstrate its resilience to noise. We hope to continue this work in the future and aim to perform this crucial validation step using actual quantum hardware.  
 
 We appreciate you taking the time to explore this project. Building and validating both the MPO and VQE solutions for Burgers' equation has been a careful, iterative effort, and we hope the notebooks, saved results, and figures make our approach clear and reproducible.  
 
